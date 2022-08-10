@@ -9,12 +9,12 @@ int linearSearch(int arr[],int n,int x){
     }
     return -1;
 }
-void printArray(int arr[], int n){
-    for(int i=0;i<n;i++){
-        cout<<arr[i]<<" ";
-    }
+// void printArray(int arr[], int n){
+//     for(int i=0;i<n;i++){
+//         cout<<arr[i]<<" ";
+//     }
 
-}
+// }
 int main(){
     int n;
     cin>>n;
