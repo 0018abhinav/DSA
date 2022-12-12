@@ -25,6 +25,26 @@ void deleteMiddle(stack<int> & s, int n){
     solve(s,n,count);
     return;
 }
+// void deleteMiddle(stack<int>& st ,int n ){
+//     int mid = n/2;
+//     vector<int> elements;
+//     int i=0;
+//     while(i<mid){
+//         // cout<<st.top()<<" ";
+//         // cout<<endl;
+//         elements.push_back(st.top());
+//         st.pop();
+//         i++;
+//     }
+//     int del = st.top();
+//     st.pop();
+    
+//     for(int i = elements.size()-1 ;i>=0;i--){
+//         st.push(elements[i]);
+//     }
+// }
+
+
 
 int main(){
     stack<int> s;

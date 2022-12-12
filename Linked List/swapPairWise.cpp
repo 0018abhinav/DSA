@@ -14,7 +14,7 @@ Node(int data){
 void swapPairWise(Node*head){
     Node *t1 = head;
     Node* t2 = head->next;
-    while(t2->next != NULL){
+    while(t2 != NULL){
         int temp = t1->data;
         t1->data=t2->data;
         t2->data = temp;

@@ -25,10 +25,24 @@ int length(Node*head){
 Node* appendLastNToFirst(Node*head){
     int n;
     cin>>n;
+    if(n == 0){
+        return head;
+    }
+    if(head == NULL || head->next == NULL){
+        return head;
+    }
+    
+    if(n % length(head)==0){
+        return head;
+    }
+    if(n> length(head)){
+        n = n % length(head);
+    }
     Node*temp= head;
     Node*temp1 = head;
     Node*headCopy = head;
-    while(temp1->next!= NULL){
+
+    while(temp1->next!= NULL)  {
         temp1= temp1->next;
     }
     int i=0;

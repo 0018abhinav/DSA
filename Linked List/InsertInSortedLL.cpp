@@ -20,7 +20,7 @@ Node * insertsorted(Node* head)
     Node * current = head;
     
     if(head==NULL || head->data >= newNode->data){
-        
+        //insert at beg
         newNode->next= head;
         head= newNode;
     }

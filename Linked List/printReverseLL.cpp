@@ -38,6 +38,15 @@ void printReverse(Node*head){
     }
 }
 
+void printreverse(Node * head){
+    Node * temp = head;
+    if(temp == NULL){
+        return;
+    }
+    printreverse(temp->next);
+    cout<<temp->data<<" ";
+}
+
 Node*input_better(){
     int data;
     cin>>data;
@@ -76,5 +85,6 @@ void print(Node*head){
 
 int main(){
     Node*head = input_better();
-    printReverse(head);
+    printReverse(head); //by storing it in arr
+    printreverse(head); //recersive
 }

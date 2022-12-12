@@ -22,7 +22,7 @@ int length(Node*head){
     return i;
 }
 
-
+ 
 int midNode(Node*head){
     int l = length(head);
     Node*temp=head;

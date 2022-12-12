@@ -38,7 +38,7 @@ int main(){
         count++;
     }
     //cout<<count<<endl;
-    cout<<cc.size()<<endl;
+    cout<<"no. of connected components= "<<cc.size()<<endl;
 
     //this is for printing diff connected components
     for(auto c_cc: cc){

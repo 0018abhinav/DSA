@@ -19,7 +19,7 @@ Node* eliminateDuplicate(Node*head){
         return head;
     }
 
-    while(t2->next!=NULL){
+    while(t2 != NULL){
         if(t1->data == t2->data){
             t2 = t2->next;
 

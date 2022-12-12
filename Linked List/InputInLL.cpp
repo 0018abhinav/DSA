@@ -44,11 +44,17 @@ void print(Node*head){
         temp = temp->next;
         
     }
-
 }
+void func (Node *head) {
+while(head != NULL) {
+    cout<<head->data<<" ";
+head = head->next->next;
+}
+}
+
 
 int main(){
     Node*head = input_better();
-    print(head);
+    func(head);
 }
 
